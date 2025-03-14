@@ -19,59 +19,97 @@ nav ul {
   margin-bottom: 0;
 }
 body {
-  margin: 24px;
+  margin: 0;
   font-family: "Barlow", sans-serif;
+  text-align: center;
 }
 h1,
-h2,
-h3{
+h2 {
   color: #162542;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
-.title{
-  font-size: 3.5rem;
+.title {
+  font-size: 3rem;
   font-weight: 900;
+  margin: 0;
 }
-.title-section{
+.title-section {
   font-size: 2rem;
   font-weight: 900;
 }
-.title-subsection{
+.title-subsection {
   font-size: 1.5rem;
   font-weight: 900;
 }
-.style{
-  color: #7B8BAD;
+.style {
+  color: #7b8bad;
 }
-.style-bold{
+.style-bold {
   font-weight: 700;
 }
-.button{
+.button {
+  font-family: inherit;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 9.375rem;
   height: 3rem;
   border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1rem;
-  display: inline-block;
+  padding: 0 0.625rem;
+  border: none;
 }
-.button-grey{
-  background-color: #E8EFF2;
+.button-grey {
+  background-color: #e8eff2;
   color: #162542;
 }
-.button-orange{
-  background-color: #F16718;
-  color: #FFFFFF;
+.button-orange {
+  background-color: #f16718;
+  color: #ffffff;
 }
-.align-top{
+.align-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.button-group {
   display: flex;
   justify-content: space-between;
 }
-.background-icon{
+.background-icon {
   width: 4.0625rem;
   height: 4.0625rem;
-  background-color: #F16718;
+  background-color: #f16718;
   border-radius: 0.5rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.3125rem;
+}
+.header-info {
+  padding: 24px 32px;
+  text-align: left;
+}
+.image {
+  border-radius: 0.5rem;
+}
+.image-large {
+  width: 23.25rem;
+}
+.image-medium {
+  height: 12.0625rem;
+}
+.image-color {
+  background-color: #f16718;
+}
+.image-gap {
+  display: flex;
+  gap: 1.5rem;
+}
+.group-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  align-items: left;
 }
