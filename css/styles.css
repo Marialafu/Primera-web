@@ -23,6 +23,10 @@ body {
   font-family: "Barlow", sans-serif;
   text-align: center;
 }
+img{
+  display: block;
+  max-width: 100%;
+}
 h1,
 h2 {
   color: #162542;
@@ -36,10 +40,12 @@ h2 {
 .title-section {
   font-size: 2rem;
   font-weight: 900;
+  
 }
 .title-subsection {
   font-size: 1.5rem;
   font-weight: 900;
+  margin: 0;
 }
 .style {
   color: #7b8bad;
@@ -55,7 +61,7 @@ h2 {
   border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1rem;
-  padding: 0 0.625rem;
+  padding: 0 0.9375rem;
   border: none;
 }
 .button-grey {
@@ -66,50 +72,97 @@ h2 {
   background-color: #f16718;
   color: #ffffff;
 }
-.align-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
+.header{
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
 }
-.button-group {
+.top-bar {
   display: flex;
   justify-content: space-between;
+  padding-right: 1.5rem;
+  margin-bottom: 4rem;
+}
+.header-info {
+  text-align: left;
+}
+.header-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .background-icon {
   width: 4.0625rem;
   height: 4.0625rem;
   background-color: #f16718;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.align-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
 }
 .footer {
   display: flex;
   justify-content: center;
   gap: 0.3125rem;
-}
-.header-info {
-  padding: 24px 32px;
-  text-align: left;
-}
-.image {
-  border-radius: 0.5rem;
+  padding: 3.125rem 0;
 }
 .image-large {
   width: 23.25rem;
+  border-radius: 0.625rem 0 0 0.625rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .image-medium {
+  border-radius: 0.625rem;
   height: 12.0625rem;
 }
-.image-color {
+.image-small{
+  border-radius: 0 0.625rem 0.625rem 0;
+  height: 12.0625rem;
+}
+.image-section{
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem;
+}
+.image-section::before{
+  content: "";
+  position: absolute;
+  height: 11.3087rem;
+  width: 7.5587rem;
+  border-radius: 0 0.625rem 0.625rem 0;
   background-color: #f16718;
+  mix-blend-mode: multiply; 
 }
-.image-gap {
+.section{
+  padding-right: 1.5rem;
+}
+.section-text{
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+@media screen and (width >= 768px){
+ .image-section{
+  justify-content: center;
+  border-radius: 10px;
+ }
+ .align-cards{
   display: flex;
-  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+ }
 }
-.group-images {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 0;
-  align-items: left;
+@media screen and (width >= 1440px){
+  
 }
+
